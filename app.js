@@ -27,6 +27,23 @@ function adicionarAmigo() {
     }
 }
 
+function sortearAmigo() {
+    if (amigos.length == 0) {
+        alert('Adicione amigos à lista antes de sortear!');
+        return;
+    }
+
+
+    let indiceAleatorio = Math.floor(Math.random() * amigos.length);
+
+    let nomeSorteado = amigos[indiceAleatorio];
+
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `O nome sorteado foi: ${nomeSorteado}`;
+
+    document.getElementById('listaAmigos').innerHTML = '';
+}
+
 //document.querySelector('input').addEventListener('click', adicionarAmigo);
 
 
