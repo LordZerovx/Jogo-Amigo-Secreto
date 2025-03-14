@@ -42,6 +42,7 @@ function sortearAmigo() {
     resultado.innerHTML = `O nome sorteado foi: ${nomeSorteado}`;
 
     document.getElementById('listaAmigos').innerHTML = '';
+    amigos.splice(0, amigos.length);
 }
 
 //document.querySelector('input').addEventListener('click', adicionarAmigo);
